@@ -12,39 +12,6 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
-        'admin' => [
-            'class' => 'mdm\admin\Module',
-            'layout' => 'left-menu',
-//            'controllerMap' => [
-//                'assignment' => [
-//                    'class' => 'mdm\admin\controllers\AssignmentController',
-//                    'userClassName' => 'app\models\User',
-//                    'idField' => 'user_id'
-//                ],
-//                'route' => [
-//                    'class' => 'mdm\admin\controllers\RouteController',
-//                ],
-//                'default' => [
-//                    'class' => 'mdm\admin\controllers\DefaultController',
-//                ],
-//                'item' => [
-//                    'class' => 'mdm\admin\controllers\ItemController',
-//                ],
-//                'menu' => [
-//                    'class' => 'mdm\admin\controllers\MenuController',
-//                ],
-//                'rule' => [
-//                    'class' => 'mdm\admin\controllers\RuleController',
-//                ],
-//
-//            ],
-            // 'menus' => [
-            //     'assignment' => [
-            //         'label' => 'Grand Access' // change label
-            //     ],
-            //     'route' => null, // disable menu route
-            // ]
-        ]
     ],
     'components' => [
         'request' => [
@@ -83,16 +50,6 @@ return [
             ],
         ],
 
-    ],
-    'as access' => [
-        'class' => 'mdm\admin\components\AccessControl',
-        'allowActions' => [//ignore all access control
-            'site/index',
-            'site/login',
-            'site/logout',
-            // 'site/hello'
-            // 'admin/*',// allow all users access admin and child
-        ]
     ],
     'params' => $params,
 ];

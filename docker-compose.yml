@@ -41,9 +41,15 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
+    environment:
+      PHP_IDE_CONFIG: 'serverName=yii2backend'
+      DEBUG: 1
+      XDEBUG_CONFIG: remote_host=host.docker.internal
     container_name: php-rest
     volumes: 
       - ./src:/var/www/html
+      - ./config/xdebug-local.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./xdebug.log:/var/log/xdbug.log
     ports: 
       - "9000:9000"
     networks: 

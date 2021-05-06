@@ -1,0 +1,33 @@
+{
+  "name": "windhoney/yii2-rest-rbac",
+  "description": "RBAC Auth manager for Yii2 RESTful",
+  "keywords": [
+    "yii",
+    "admin",
+    "auth",
+    "rbac",
+    "restful"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/windhoney/yii2-rest-rbac/issues",
+    "source": "https://github.com/windhoney/yii2-rest-rbac"
+  },
+  "authors": [
+    {
+      "name": "windhoney",
+      "email": "524415250@qq.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.7",
+    "php": ">=7.0.0",
+    "filsh/yii2-oauth2-server": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "wind\\rest\\": ""
+    }
+  }
+}
